@@ -34,7 +34,7 @@ Contact: mike@dragonflylogic.com
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <assert.h>
-#include <wand/magick-wand.h>
+#include <MagickWand/MagickWand.h>
 #include <dmtx.h>
 #include "../common/dmtxutil.h"
 

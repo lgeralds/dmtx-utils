@@ -52,3 +52,9 @@ setup:
   * You may run into issues if you mix the autotools packages in
     MacPorts with the ones installed from Xcode Tools. Make sure
     /opt/local/bin appears before /usr/bin in your $PATH.
+
+
+
+2017-01-21 lgeralds
+Using newer ImageMagick [7+] from Brew
+./configure LDFLAGS='-ldmtx -lMagickWand-7.Q16HDRI -lMagickCore-7.Q16HDRI -lMagick++-7.Q16HDRI' DMTX_CFLAGS='-I/usr/local/include' DMTX_LIBS='-L/usr/local/opt/libdmtx/lib' MAGICK_CFLAGS='-I/usr/local/include/ImageMagick-7' MAGICK_LIBS='-L/usr/local/opt/imagemagick/lib'

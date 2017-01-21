@@ -114,7 +114,7 @@ main(int argc, char *argv[])
          }
 
          /* Copy pixels to known format */
-         success = MagickGetImagePixels(wand, 0, 0, width, height, "RGB", CharPixel, pxl);
+         success = MagickExportImagePixels(wand, 0, 0, width, height, "RGB", CharPixel, pxl);
          if(success == MagickFalse || pxl == NULL) {
             CleanupMagick(&wand, DmtxTrue);
             FatalError(EX_OSERR, "malloc() error");
